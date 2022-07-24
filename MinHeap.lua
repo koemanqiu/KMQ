@@ -49,6 +49,7 @@ local function MinHeap()
   end
 
   --private
+  --上浮操作
   function ShiftUp(nIndex)
       if nIndex <= 1 then
           return true
@@ -63,6 +64,7 @@ local function MinHeap()
       end
   end
 
+  --下沉操作
   function SinkDown(nIndex)    
     local leftIdx = nIndex * 2
     local rightIdx = nIndex * 2 + 1    
