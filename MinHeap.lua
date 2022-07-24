@@ -26,7 +26,6 @@ local function MinHeap()
   local size = 0
   
   function this.init()
-
       return this
   end
 
@@ -64,8 +63,7 @@ local function MinHeap()
       end
   end
 
-  function SinkDown(nIndex)
-    
+  function SinkDown(nIndex)    
     local leftIdx = nIndex * 2
     local rightIdx = nIndex * 2 + 1    
     local targetIdx = leftIdx
